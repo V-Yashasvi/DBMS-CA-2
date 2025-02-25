@@ -1,0 +1,21 @@
+meta {
+  name: put
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:4000/book/update/67bd9a1dd613c0cde4a9bec7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title":"book2",
+    "author":"bookAuthor",
+    "genre":"fantasy",
+    "publishYear":1999,
+    "availableCopies":12
+  }
+}
